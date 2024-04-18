@@ -58,6 +58,9 @@ const ngxUiLoaderConfig: NgxUiLoaderConfig ={
     HttpClientModule,
     NgxUiLoaderModule.forRoot(ngxUiLoaderConfig)
   ],
+entryComponents: [
+   LoginComponent
+],
   providers: [HttpClientModule,{provide:HTTP_INTERCEPTORS,useClass:TokenInterceptorInterceptor,multi:true}],
   bootstrap: [AppComponent]
 })
